@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+body, html {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel Decorarive', cursive;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.banner  video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.overlay {
+    
+    position: absolute;
+    text-align: center;
+}
+
+.overlay h1{
+    font-family: 'Cinzel Decorative', cursive;
+    color: #F9F3F4;
+    text-shadow: 6px 6px #000;
+    font-size: 500%;
+
+}
+
+.btn {
+    border-radius: 9px;
+    font-family: 'Oswald';
+    color: whitesmoke;
+    font-size: 175%;
+    padding: 10px 20px;
+    border: solid #f9f3f4 4px;
+    text-decoration: none;
+    background-color: #23B6B6;
+    box-shadow: 2px 2px #000;
+}
+
+.btn:hover {
+    color: #ffd700;
+    border: solid #ffd700 7px;
+}
+
+.star-img{
+    position: absolute;
+    border-radius: 5px;
+    border: solid #ffd700;
+    top: 10;
+    left: 10;
+
+}
+
+.sign-img{
+    position: absolute;
+    border-radius: 5px;
+    border: solid #ffd700;
+    top: 10;
+    left: 1300;
+   
+}
+
+.heading h1 {
+    position: relative;
+    text-align: center;
+    top: 5;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #F9F3F4;
+    text-shadow: 6px 6px #000;
+    font-size: 500%;
+
+}
+
+.dates {
+    position: relative;
+    text-align: center;
+    top: 7;
+    font-family: 'Cinzel Decorative', cursive;
+    color: #ffd700;
+    text-shadow: 6px 6px #000;
+    font-size: 250%;
+
+}
+
+.paragh {
+    position: relative;
+    top: 200;
+    left: 265;
+    width: 950 ;
+    text-align: center;
+    border-radius: 9px;
+    font-family: 'arial';
+    color: whitesmoke;
+    font-size: 175%;
+    padding: 10px 20px;
+    border: solid #ffd700 4px;
+    text-decoration: none;
+    background-color: #000;
+    box-shadow: 2px 2px #000;
+}
+
+
+.logo {
+    float: left;
+    padding-left: 10px;
+    padding-top: 40px;
+    font-family: 'Cinzel Decorative' ;
+    color : #fff ; 
+    text-shadow : 3px 3px #000 ; 
+    font-size : 250% ;
+}
+nav {
+    float: right;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 15px;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    position: relative;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Cinzel Decorative';
+    text-transform: uppercase;
+    font-size: 25px;
+}
+nav a:hover {
+    color: #ffd700;
+}
+nav a::before {
+    content: '';
+    display: block;
+    height: 10px;
+    background-color: #ffd700;
+
+    position: relative;
+    top: -50px;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+    width: 100%;
+}
+
+header {
+    background-color: navy;
+    opacity: 0.7;
+
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.Loginbox {
+    border: solid #ffd700 4px;
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: .7;
+}
+.Loginbox p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel Decorative';
+}
+.Loginbox input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox input[type= "text"] , input[type= "password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Loginbox input[type= "submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #3385ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.Loginbox input[type= "submit"]:hover
+{
+    cursor: pointer;
+    background: #ffd700;
+    color: #000;
+}
+.Loginbox a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.Loginbox a:hover {
+    color: #3385ff;
+}
+.Avatar {
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cinzel Decorative';
+}
+
+nav ul li a {
+    display: block;
+    padding: 24px 14px;
+
+}
+
+.dropdown {
+    display: none;
+    text-align: center;
+}
+
+
+nav ul li:hover .dropdown {
+    display: block;
+    position: absolute;
+    background-color: navy;
+    
+}
+
+
+nav ul li:hover .dropdown ul li {
+    display: block;
+    margin:  5px;
+    align-items: center;
+    width: 170px;
+}
+
+.Contact-title {
+    margin-top: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 2s ease-in-out;
+    text-align: center;
+    font-family: 'Cinzel Decorative';
+}
+.Contact-title h1 {
+    font-size: 32px;
+    line-height: 10px;
+}
+.Contact-title h2 {
+    font-size: 16px;
+}
+.Contact-form {
+    text-align: center;
+    margin: 50px;
+    transition: all 2s ease-in-out;
+}
+.Form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+input {
+    height: 45px;
+}
+.Contact-form input[type= "submit"] {
+    width: 600px;
+    font-family: 'Cinzel Decorative';
+    background: #3385ff;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+    opacity: .7;
+    border-radius: 25px;
+}
+form .Form-control submit:hover 
+{
+    background: #ffd700;
+    cursor: pointer;
+}
+
+.Contact-form input[type= "submit"]:hover
+{
+    cursor: pointer;
+    background: #ffd700;
+    color: #000;
+}
+
+area : :hover {
+    cursor: pointer;
+    
+}
+
+.Wheel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 650px;
+}
+
+.joyal h1{
+    font-size: 50;
+    font-family: 'Cinzel Decorative';
+    color: #ffd700;
+}
+
+.joyal p{
+    font-family: 'Cormorant', serif;
+    color: #fff ;
+    font-size: 175%;
+
+}
+.joyal {
+    float: left;
+    margin-left: 30;
+    height: 550;
+    width: 415 ;
+    text-align: left;
+    border-radius: 9px;
+    padding: 10px 20px;
+    border: solid  #ffd700 4px;
+    text-decoration: none;
+    background-color: #000;
+    box-shadow: 2px 2px #000;
+    opacity: 0.7;
+}
+
+.shubham h1{
+    font-size: 50;
+    font-family: 'Cinzel Decorative';
+    color: #ffd700;
+}
+
+.shubham p{
+    font-family: 'Cormorant', serif;
+    color: #fff ;
+    font-size: 175%;
+
+}
+.shubham {
+    float: right;
+    margin-right: 30;
+    height: 550;
+    width: 415 ;
+    text-align: left;
+    border-radius: 9px;
+    padding: 10px 20px;
+    border: solid  #ffd700 4px;
+    text-decoration: none;
+    background-color: #000;
+    box-shadow: 2px 2px #000;
+    opacity: 0.7;
+}
+
+.about {
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 28%;
+    font-size: 25;
+    font-family: 'Cinzel Decorative';
+    color: #ffd700;
+
+}
+
+.bottom {
+    position: absolute;
+    float: left;
+    left: 12;
+    top: 950;
+    font-family: 'Cormorant', serif;
+    color: #fff ;
+    font-size: 150%;
+
+}
+
+.media ul {
+    position: absolute;
+    top: 987;
+    right: -54;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.media ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.media ul li .fa {
+    font-size: 27px;
+    line-height: 60px;
+    transition: .6s;
+    color: #fff;
+}
+
+.media ul li a : :hover {
+    cursor: pointer;
+    
+}
+
+table {
+    text-align: center;
+    width: 1100px;
+    font-size: 150%;
+    padding-bottom: 10px;
+    
+}
+
+tr {
+    color: #fff;
+    width: 10px;
+}
+
+table, th, td {
+    border: 5px solid #ffd700;
+    border-collapse: collapse;
+}
+.table-box {
+    background: #000;
+    opacity: .7;
+    font-family: 'Cinzel Decorative';
+}
+th {
+    font-family: 'Cormorant', serif;
+    font-size: 175%;
+}
+th,td {
+    padding: 10px;
+}
+
+.Sign-up-box {
+    border: solid #ffd700 4px;
+    width: 320px;
+    background: #000;
+    color: #fff;
+    top: 52%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50% , -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: .7;
+   
+}
+
+.Sign-up-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.Sign-up-box input[type="email"] , input[type="password"] 
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.Sign-up-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #3385ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+
+}
+.Sign-up-box input[type= "submit"]:hover
+{
+    cursor: pointer;
+    background: #ffd700;
+    color: #000;
+}
+
+.Sign-up-box button[type= "button"]:hover
+{
+    cursor: pointer;
+    background: #ffd700;
+    color: #000;
+}
+.or {
+    text-align: center;
+    font-size: 16px;
+    
+}
+button {
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    height: 50px;
+    background: #3385ff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 25px;
+    width: 100%;
+}
+form a :hover {
+    cursor: pointer;
+    color: #ffd700;
+}
+
